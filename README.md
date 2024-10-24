@@ -1,7 +1,7 @@
 # Typenshow
 
 Typenshow (Portmanteau for Type & Show) is a minimalistic Android app for quickly typing something down. \
-NOT INTENDED for storing information (although it will be a possibility in future), only for typing and showing the text for any purposes. \
+NOT INTENDED for storing information (although it will be a possibility in future), only for typing and showing the text for any purposes.
 
 Logo was taken from https://3dicons.co/
 
