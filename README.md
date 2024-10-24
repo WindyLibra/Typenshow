@@ -3,6 +3,8 @@
 Typenshow (Portmanteau for Type & Show) is a minimalistic Android app for quickly typing something down. \
 NOT INTENDED for storing information (although it will be a possibility in future), only for typing and showing the text for any purposes. \
 
+Logo was taken from https://3dicons.co/
+
 ## FAQ
 
 ### What state the app is in?
@@ -21,3 +23,4 @@ Here's the list:
 This is my first open-source project, so I don't know all the guidelines I should follow. \
 Nevertheless, you can write to aerolibra1196@gmail.com for questions or open an Issue. \
 If you are seeing this on GitHub, go and check the GitLab repo, as GitHub is the mirror of this project.
+
