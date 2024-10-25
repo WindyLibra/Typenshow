@@ -9,7 +9,7 @@ Logo was taken from https://3dicons.co/
 
 ### What state the app is in?
 
-0.0.1 Alpha. Although the app is very niche, I (the maintainer) still want to add some features
+0.1 Alpha. Although the app is very niche, I (the maintainer) still want to add some features
 
 ### What's on the roadmap of updates?
 
