@@ -7,8 +7,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
@@ -22,6 +20,9 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.typenshow.ui.theme.TypenshowTheme
+// import androidx.compose.material3.MaterialTheme
+// import androidx.compose.material3.ExperimentalMaterial3Api
+// Android Studio says these are unused, but let them be here for safety
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,16 +47,20 @@ class MainActivity : ComponentActivity() {
 
 /*
  TODO 1. Add Settings for changing fonts and their sizes
-      2. Randomize starting text
-      3. Add Theming for the Background and Text
-      4. Publish it to F-Droid
+      2. Add Theming for the Background and Text
+      3. Publish it to F-Droid
+
+ DONE 1. Randomize starting text
  */
 
 
-@OptIn(ExperimentalMaterial3Api::class)
+// @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TextInputField(modifier: Modifier = Modifier) {
     var text by remember { mutableStateOf("") }
+    val placeholders = listOf("Type something...",
+                                "Numbers, Mason!",
+                                "Where's the money, Lebowski?",)
 
     TextField(
         value = text,
@@ -65,6 +70,6 @@ fun TextInputField(modifier: Modifier = Modifier) {
             fontSize = 20.sp,
             fontFamily = FontFamily.Default
         ),
-        placeholder = { androidx.compose.material3.Text("Type something...") }
+        placeholder = { androidx.compose.material3.Text(placeholders.random()) }
     )
 }
